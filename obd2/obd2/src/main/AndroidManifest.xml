@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.github.pires.obd.reader">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@drawable/ic_btcar"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:name=".Util.GlobalApplication"
+        >
+        <activity
+            android:name="com.github.pires.obd.reader.Splash.SplashActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleInstance"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Main.MainActivity" />
+        <activity android:name=".Login.LoginActivity" />
+        <activity android:name=".SignUp.SignUpActivity" />
+        <activity android:name=".Connect.ConnectActivity" />
+        <activity android:name=".ManagerMain.ManagerMainActivity" />
+        <activity android:name=".Record.RecordActivity" />
+
+        <service
+            android:name="com.github.pires.obd.reader.Service.ObdGatewayService"
+            android:launchMode="singleInstance"
+            android:exported="false" />
+        <service android:name=".Service.MockObdGatewayService" />
+    </application>
+
+</manifest>

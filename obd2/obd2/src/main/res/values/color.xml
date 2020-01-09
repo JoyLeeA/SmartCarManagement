@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4e4e4e</color>
+    <color name="colorPrimaryDark">#434343</color>
+    <color name="colorAccent">#434343</color>
+
+    <color name="Black">#000000</color>
+    <color name="White">#ffffff</color>
+
+    <color name="TextColor1">#68ffffff</color>
+
+
+
+    <color name="BarColor1">#17ffffff</color>
+    <color name="BarColor2">#1effffff</color>
+    <color name="BarColor3">#8fffffff</color>
+    <color name="BarColor4">#23ffffff</color>
+</resources>

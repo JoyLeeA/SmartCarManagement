@@ -1,0 +1,15 @@
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/drive_main_menu_connect"
+        android:orderInCategory="100"
+        android:title="장치 검색"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/drive_main_menu_logout"
+        android:orderInCategory="100"
+        android:title="로그아웃"
+        app:showAsAction="never" />
+
+</menu>
